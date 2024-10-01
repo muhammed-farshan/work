@@ -1,0 +1,288 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-left: 25px; */
+}
+
+#container {
+    width: 100%;
+    background-color: rgb(201, 222, 240);
+
+}
+
+#logo {
+    width: 85px;
+}
+
+#checkbox {
+    display: none;
+}
+
+.icon2 {
+    font-size: 30px;
+    color: rgb(65, 65, 149);
+    position: absolute;
+    right: 5px;
+    top: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+#logohead {
+    font-weight: 600;
+}
+
+.listitems {
+    display: inline;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.items {
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#imgsection {
+    width: 100%;
+    height: 500px;
+}
+
+#mainimage {
+    width: 100%;
+    height: 100%;
+}
+
+#contentsection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.secondsection {
+    text-align: center;
+    padding: 5.5rem 2rem;
+    width: 100%;
+    height: 600px;
+}
+
+.heading {
+    font-family: "Sofadi One", system-ui;
+    padding: 2px;
+    font-weight: 600;
+    font-size: larger;
+}
+
+#para {
+    margin-top: 15px;
+    font-family: "Dancing Script", system-ui;
+    font-size: 25px;
+    text-align: justify;
+    margin-left: 3rem;
+    line-height: 40px;
+}
+
+#btn {
+    margin: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+    font-weight: 600;
+    color: blue;
+    float: right;
+}
+
+#image2 {
+    width: 100%;
+    height: 100%;
+    padding-right: 1.5rem;
+
+}
+
+.picturs {
+    margin: 4rem 7rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.pics {
+    width: 420px;
+    height: 300px;
+}
+
+.pic {
+    width: 100%;
+    height: 100%;
+}
+
+#sectionlast {
+    background-color: rgb(227, 225, 212);
+}
+
+.icons {
+    margin: .5rem 4rem;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    font-size: 2rem;
+}
+
+footer {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.footersection {
+    width: 100px;
+    height: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imglast {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.spn {
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 65px;
+}
+
+.icns {
+    padding: 40px;
+    font-size: 1.5rem;
+}
+
+@media(max-width:760px) {
+    .icon2 {
+        display: flex;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 100%;
+        background-color: blanchedalmond;
+        display: none;
+        margin-left: 0px;
+    }
+
+    .navbar a {
+        display: block;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    #closeicon {
+        display: none;
+    }
+
+    #checkbox:checked~.icon2 #menuicon {
+        display: none;
+    }
+
+    #checkbox:checked~.icon2 #closeicon {
+        display: block;
+    }
+
+    #checkbox:checked~.navbar {
+        display: block;
+    }
+
+    #paradiv {
+        overflow: hidden;
+    }
+
+    .pics {
+        width: 200px;
+        height: 150px;
+    }
+
+
+    .picturs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 50px 50px;
+        gap: 10px;
+    }
+
+    #container {
+        width: 100%;
+    }
+
+    #contentsection {
+        display: block;
+    }
+
+    .footersection {
+        width: 20px;
+        display: block;
+        height: 100px;
+    }
+
+    .icns {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .imglast {
+        margin-top: 15px;
+    }
+
+    .spn {
+        font-weight: 200;
+        font-size: 10px;
+        padding: 2px;
+    }
+}
+
+/* small screen */
+@media(max-width:480px) {
+    .pics {
+        width: 100px;
+        height: 100px;
+    }
+
+    .picturs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 10px;
+
+    }
+
+    .icons {
+        margin: 0px;
+        display: flex;
+        font-size: 10px;
+        padding: 10px;
+
+    }
+}
+
+/* large screen */
+@media(min-width:992px) {
+    #paradiv {
+        overflow: hidden;
+    }
+}
